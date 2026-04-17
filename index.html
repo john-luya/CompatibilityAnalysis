@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>八字合婚分析报告(增订版) · 王喆 × 熊莎</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #1a1612;
+  --ink-soft: #2c2620;
+  --paper: #f5f1ea;
+  --paper-warm: #ede6d8;
+  --paper-deep: #e0d5c0;
+  --gold: #a8843f;
+  --gold-deep: #7a5e2a;
+  --crimson: #8b2e2e;
+  --jade: #3a5a4a;
+  --shadow: rgba(26, 22, 18, 0.12);
+  --serif-cn: 'Noto Serif SC', 'Songti SC', 'STSong', serif;
+  --serif-en: 'Cormorant Garamond', 'Times New Roman', serif;
+  --mono: 'JetBrains Mono', monospace;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif-cn);
+  font-weight: 400;
+  line-height: 1.85;
+  font-size: 16px;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(168, 132, 63, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(139, 46, 46, 0.03) 0%, transparent 50%);
+  min-height: 100vh;
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.08 0 0 0 0 0.06 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 1;
+}
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 60px 40px 100px;
+  position: relative;
+  z-index: 2;
+}
+.revision-badge {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--jade);
+  color: var(--paper);
+  padding: 8px 16px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.report-header {
+  text-align: center;
+  padding: 60px 0 80px;
+  border-bottom: 1px solid var(--paper-deep);
+  margin-bottom: 50px;
+  position: relative;
+}
+.report-header::before {
+  content: '☯';
+  display: block;
+  font-size: 48px;
+  color: var(--gold);
+  margin-bottom: 30px;
+  opacity: 0.7;
+}
+.title-cn {
+  font-family: var(--serif-cn);
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--ink);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+.title-revision {
+  font-family: var(--serif-cn);
+  font-size: 16px;
+  color: var(--jade);
+  letter-spacing: 0.3em;
+  margin-bottom: 18px;
+}
+.title-en {
+  font-family: var(--serif-en);
+  font-size: 18px;
+  font-style: italic;
+  color: var(--gold-deep);
+  letter-spacing: 0.2em;
+  margin-bottom: 30px;
+}
+.title-divider {
+  width: 60px;
+  height: 1px;
+  background: var(--gold);
+  margin: 0 auto 30px;
+}
+.subjects {
+  font-family: var(--serif-cn);
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--ink-soft);
+  margin-bottom: 12px;
+}
+.subjects .x {
+  color: var(--crimson);
+  font-family: var(--serif-en);
+  font-style: italic;
+  margin: 0 12px;
+}
+.report-meta {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--gold-deep);
+  letter-spacing: 0.15em;
+  margin-top: 20px;
+}
+
+.revision-notice {
+  background: linear-gradient(135deg, #eef5ee 0%, #dde8dd 100%);
+  border: 1px solid var(--jade);
+  border-left: 4px solid var(--jade);
+  padding: 30px 36px;
+  margin-bottom: 60px;
+  font-size: 14px;
+  position: relative;
+}
+.revision-notice::before {
+  content: '增 订 说 明';
+  position: absolute;
+  top: -12px;
+  left: 24px;
+  background: var(--jade);
+  color: var(--paper);
+  padding: 4px 16px;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+}
+.revision-notice h4 {
+  font-weight: 600;
+  color: var(--ink);
+  margin: 14px 0 8px;
+  font-size: 14px;
+}
+.revision-notice p, .revision-notice li {
+  color: var(--ink-soft);
+  line-height: 1.75;
+}
+.revision-notice ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 8px 0;
+}
+.revision-notice ul li {
+  padding: 4px 0 4px 20px;
+  position: relative;
+}
+.revision-notice ul li::before {
+  content: '·';
+  position: absolute;
+  left: 6px;
+  color: var(--jade);
+  font-weight: 700;
+}
+
+.toc {
+  background: var(--paper-warm);
+  border-left: 3px solid var(--gold);
+  padding: 30px 40px;
+  margin-bottom: 60px;
+  font-size: 14px;
+}
+.toc-title {
+  font-family: var(--serif-en);
+  font-size: 20px;
+  font-style: italic;
+  color: var(--gold-deep);
+  margin-bottom: 20px;
+  letter-spacing: 0.1em;
+}
+.toc ol {
+  list-style: none;
+  counter-reset: toc;
+  columns: 2;
+  column-gap: 40px;
+}
+.toc li {
+  counter-increment: toc;
+  padding: 6px 0;
+  break-inside: avoid;
+}
+.toc li::before {
+  content: counter(toc, decimal-leading-zero) '.';
+  font-family: var(--mono);
+  color: var(--gold);
+  margin-right: 10px;
+  font-size: 12px;
+}
+.toc a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.toc a:hover { color: var(--crimson); }
+.toc .new-tag {
+  display: inline-block;
+  background: var(--jade);
+  color: var(--paper);
+  font-size: 9px;
+  padding: 1px 6px;
+  margin-left: 6px;
+  letter-spacing: 0.1em;
+  font-family: var(--mono);
+  vertical-align: middle;
+}
+
+.tldr {
+  background: linear-gradient(135deg, #2c2620 0%, #1a1612 100%);
+  color: var(--paper);
+  padding: 40px 50px;
+  margin-bottom: 80px;
+  position: relative;
+  border: 1px solid var(--gold-deep);
+}
+.tldr::before {
+  content: '核心结论';
+  position: absolute;
+  top: -12px;
+  left: 30px;
+  background: var(--gold);
+  color: var(--ink);
+  padding: 4px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+.tldr-text {
+  font-size: 17px;
+  line-height: 1.95;
+  color: #f0e8d8;
+}
+.tldr-text strong { color: var(--gold); font-weight: 600; }
+
+.section { margin-bottom: 80px; }
+.section-header {
+  margin-bottom: 40px;
+  position: relative;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--paper-deep);
+}
+.section-num {
+  font-family: var(--serif-en);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--gold);
+  letter-spacing: 0.3em;
+  margin-bottom: 8px;
+  display: block;
+}
+.section-title {
+  font-family: var(--serif-cn);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0.08em;
+}
+.section-title-en {
+  font-family: var(--serif-en);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--gold-deep);
+  margin-top: 6px;
+  letter-spacing: 0.15em;
+}
+.section-title .new-flag {
+  background: var(--jade);
+  color: var(--paper);
+  font-size: 11px;
+  padding: 2px 10px;
+  margin-left: 12px;
+  vertical-align: middle;
+  letter-spacing: 0.2em;
+  font-family: var(--mono);
+  font-weight: normal;
+}
+.subsection-title {
+  font-family: var(--serif-cn);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 40px 0 20px;
+  padding-left: 16px;
+  border-left: 3px solid var(--crimson);
+  letter-spacing: 0.05em;
+}
+.section p { margin-bottom: 16px; color: var(--ink-soft); }
+.section strong { color: var(--crimson); font-weight: 600; }
+
+.bazi-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 40px 0;
+}
+.bazi-chart {
+  background: var(--paper-warm);
+  padding: 30px 24px;
+  border: 1px solid var(--paper-deep);
+  position: relative;
+}
+.bazi-chart-title {
+  font-family: var(--serif-cn);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 6px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.bazi-chart-sub {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--gold-deep);
+  text-align: center;
+  margin-bottom: 24px;
+  letter-spacing: 0.1em;
+}
+.bazi-grid {
+  display: grid;
+  grid-template-columns: 60px 1fr 1fr 1fr 1fr;
+  gap: 0;
+  border: 1px solid var(--gold-deep);
+  background: var(--paper);
+}
+.bazi-grid > div {
+  padding: 10px 6px;
+  text-align: center;
+  border-right: 1px solid var(--paper-deep);
+  border-bottom: 1px solid var(--paper-deep);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bazi-grid > div:last-child,
+.bazi-grid > div:nth-child(5n) { border-right: none; }
+.bazi-grid > div:nth-last-child(-n+5) { border-bottom: none; }
+.bazi-grid .label {
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
+.bazi-grid .header-cell {
+  background: var(--gold-deep);
+  color: var(--paper);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+.bazi-grid .gz {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  font-family: var(--serif-cn);
+}
+.bazi-grid .wx { font-size: 12px; color: var(--gold-deep); }
+.bazi-grid .gong { font-size: 11px; color: var(--ink-soft); }
+.bazi-grid .ss { font-size: 11px; color: var(--crimson); font-weight: 500; }
+.wx-summary {
+  margin-top: 20px;
+  padding: 14px 16px;
+  background: var(--paper);
+  border-left: 2px solid var(--crimson);
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+.wx-summary strong { color: var(--ink); font-weight: 600; }
+
+.info-table {
+  width: 100%;
+  margin: 30px 0;
+  border-collapse: collapse;
+  font-size: 14px;
+  background: var(--paper-warm);
+}
+.info-table th, .info-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--paper-deep);
+}
+.info-table th {
+  background: var(--ink);
+  color: var(--paper);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-size: 13px;
+}
+.info-table tr:last-child td { border-bottom: none; }
+
+.highlight {
+  background: var(--paper-warm);
+  border-left: 3px solid var(--gold);
+  padding: 20px 28px;
+  margin: 24px 0;
+  font-size: 15px;
+  color: var(--ink-soft);
+  position: relative;
+}
+.highlight.crimson { border-color: var(--crimson); }
+.highlight.jade { border-color: var(--jade); }
+.highlight-label {
+  font-family: var(--serif-en);
+  font-size: 11px;
+  font-style: italic;
+  letter-spacing: 0.2em;
+  color: var(--gold-deep);
+  margin-bottom: 8px;
+  display: block;
+}
+.highlight.crimson .highlight-label { color: var(--crimson); }
+.highlight.jade .highlight-label { color: var(--jade); }
+
+.section ul {
+  margin: 16px 0;
+  padding-left: 0;
+  list-style: none;
+}
+.section ul li {
+  padding: 6px 0 6px 24px;
+  position: relative;
+  color: var(--ink-soft);
+}
+.section ul li::before {
+  content: '◆';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 10px;
+  top: 12px;
+}
+.section ol {
+  margin: 16px 0;
+  padding-left: 0;
+  list-style: none;
+  counter-reset: section-list;
+}
+.section ol li {
+  counter-increment: section-list;
+  padding: 8px 0 8px 36px;
+  position: relative;
+  color: var(--ink-soft);
+}
+.section ol li::before {
+  content: counter(section-list, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--crimson);
+  font-weight: 600;
+}
+
+.rating-table {
+  width: 100%;
+  margin: 30px 0;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.rating-table th {
+  background: var(--gold-deep);
+  color: var(--paper);
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.rating-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--paper-deep);
+  background: var(--paper-warm);
+}
+.rating-table tr:last-child td {
+  border-bottom: 2px solid var(--ink);
+  font-weight: 600;
+  background: var(--paper-deep);
+}
+.stars { color: var(--gold); letter-spacing: 0.1em; }
+
+.quote {
+  font-family: var(--serif-cn);
+  font-size: 17px;
+  font-style: italic;
+  color: var(--ink);
+  padding: 30px 40px;
+  margin: 30px 0;
+  background: var(--paper-deep);
+  border-left: 4px solid var(--crimson);
+  position: relative;
+  line-height: 1.9;
+}
+.quote::before {
+  content: '"';
+  font-family: var(--serif-en);
+  font-size: 80px;
+  color: var(--gold);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  opacity: 0.3;
+}
+
+.action-box {
+  background: var(--paper-warm);
+  padding: 30px 40px;
+  margin: 30px 0;
+  border: 1px solid var(--paper-deep);
+}
+.action-box h4 {
+  font-family: var(--serif-cn);
+  font-size: 16px;
+  color: var(--ink);
+  margin-bottom: 14px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+.action-box.do { border-top: 4px solid var(--jade); }
+.action-box.dont { border-top: 4px solid var(--crimson); }
+.action-box.do h4::before { content: '✓ '; color: var(--jade); font-weight: 700; }
+.action-box.dont h4::before { content: '✗ '; color: var(--crimson); font-weight: 700; }
+
+.ten-gods-table {
+  width: 100%;
+  margin: 24px 0;
+  border-collapse: collapse;
+  font-size: 13px;
+  background: var(--paper);
+}
+.ten-gods-table th {
+  background: var(--gold-deep);
+  color: var(--paper);
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+.ten-gods-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid var(--paper-deep);
+  border-right: 1px solid var(--paper-deep);
+  text-align: center;
+}
+.ten-gods-table td:first-child {
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
+.ten-gods-table .ss-name {
+  color: var(--crimson);
+  font-weight: 600;
+  font-size: 13px;
+}
+.ten-gods-table .gz-cell {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  font-family: var(--serif-cn);
+}
+
+.luck-cycle {
+  background: var(--paper-warm);
+  padding: 24px 30px;
+  margin: 24px 0;
+  border: 1px solid var(--paper-deep);
+  position: relative;
+}
+.luck-cycle h4 {
+  color: var(--ink);
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+.luck-cycle .phase-tag {
+  display: inline-block;
+  background: var(--gold-deep);
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: 3px 10px;
+  margin-right: 10px;
+  letter-spacing: 0.1em;
+}
+
+.footer {
+  margin-top: 100px;
+  padding-top: 40px;
+  border-top: 1px solid var(--paper-deep);
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+.footer-title {
+  font-family: var(--serif-en);
+  font-style: italic;
+  color: var(--gold-deep);
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  margin-bottom: 20px;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+.footer li {
+  padding: 4px 0 4px 16px;
+  position: relative;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.footer li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+}
+.disclaimer {
+  margin-top: 30px;
+  padding: 20px 24px;
+  background: var(--paper-warm);
+  font-size: 12px;
+  font-style: italic;
+  color: var(--ink-soft);
+  border-left: 2px solid var(--gold);
+}
+.report-end {
+  text-align: center;
+  margin-top: 60px;
+  font-family: var(--serif-en);
+  font-style: italic;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  font-size: 14px;
+}
+.report-end::before {
+  content: '◆ ◆ ◆';
+  display: block;
+  margin-bottom: 16px;
+  letter-spacing: 0.5em;
+}
+
+@media (max-width: 768px) {
+  .container { padding: 30px 20px 60px; }
+  .title-cn { font-size: 30px; }
+  .bazi-charts { grid-template-columns: 1fr; }
+  .toc ol { columns: 1; }
+  .quote { padding: 20px 24px; }
+  .tldr { padding: 30px 24px; }
+  .revision-badge { top: 10px; right: 10px; font-size: 10px; padding: 6px 10px; }
+  .ten-gods-table { font-size: 11px; }
+  .ten-gods-table th, .ten-gods-table td { padding: 8px 4px; }
+}
+
+@media print {
+  body::before { display: none; }
+  .revision-badge { display: none; }
+  .container { padding: 20px; }
+  .section { page-break-inside: avoid; }
+  .tldr { background: #f0f0f0 !important; color: #000 !important; -webkit-print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+
+<div class="revision-badge">REV. 03 · 2026.04.16</div>
+
+<div class="container">
+
+<header class="report-header">
+  <h1 class="title-cn">八字合婚分析报告</h1>
+  <div class="title-revision">— 增 订 版 —</div>
+  <div class="title-en">Integrated Edition · With Ten Gods & Luck Cycle Analysis</div>
+  <div class="title-divider"></div>
+  <div class="subjects">王 喆<span class="x">×</span>熊 莎</div>
+  <div class="report-meta">CONFIDENTIAL · REV. 03 · 2026.04.16</div>
+</header>
+
+<!-- ==================== REVISION NOTICE ==================== -->
+<div class="revision-notice">
+  <p><strong>本版(REV. 03)相较于REV. 02的变更:</strong></p>
+  <p>用户提交了来自第三方AI(DeepSeek)的平行分析报告,经我逐条比对验证后,吸收其中三项可靠且增量的视角,整合为本增订版。已剔除原报告中夸大或不准确的部分。</p>
+
+  <h4>本版新增内容</h4>
+  <ul>
+    <li><strong>玖 · 十神配置分析</strong>(新增) — 从"十神"视角补充人物画像,提出两人的格局名称:王喆为"正官合身"、Susita为"伤官佩印"</li>
+    <li><strong>拾贰 · 大运流年简析</strong>(新增) — 当前人生阶段与"节奏错位"现象,2027丁未年的注意点</li>
+    <li><strong>拾叁 · 修行法门(并入实操建议)</strong>(新增) — 王喆与Susita各自的关系修行方向</li>
+  </ul>
+
+  <h4>未吸收的内容(原因)</h4>
+  <ul>
+    <li>DeepSeek将"丑戌相刑"定义为"核心矛盾/粉碎机"——权重夸大,不符合命理书原典中"合大于刑"的基本原则</li>
+    <li>DeepSeek将2027年定义为"悬崖之年、关系崩盘"——戏剧化修辞,超出大运流年分析应有的颗粒度</li>
+    <li>DeepSeek将Susita判定为"身旺"——与命盘实际结构不符(庚金生戌月得令但有限,日支子水泄气,整体应判身弱偏中和)</li>
+    <li>风水器物(铜葫芦、特定颜色床品等)建议——信则有不信则无,不纳入结构性分析</li>
+  </ul>
+
+  <p style="margin-top:14px; font-size:12px; font-style:italic;">本版报告在保持REV. 02核心结构正确的基础上,通过引入十神视角与大运流年视角,使命盘解读更立体、实用建议更具体。REV. 01与REV. 02可删除,仅保留本版。</p>
+</div>
+
+<!-- ==================== TOC ==================== -->
+<nav class="toc">
+  <div class="toc-title">Table of Contents</div>
+  <ol>
+    <li><a href="#s1">基础资料与命盘</a></li>
+    <li><a href="#s2">真太阳时校正</a></li>
+    <li><a href="#s3">命局结构解读</a></li>
+    <li><a href="#s4">生肖与星座合婚</a></li>
+    <li><a href="#s5">四柱合婚详解</a></li>
+    <li><a href="#s6">用神匹配分析</a></li>
+    <li><a href="#s7">夫妻宫深度互看</a></li>
+    <li><a href="#s8">时柱呼应解读</a></li>
+    <li><a href="#s9">十神配置分析<span class="new-tag">NEW</span></a></li>
+    <li><a href="#s10">综合评级</a></li>
+    <li><a href="#s11">关键议题与隐性张力</a></li>
+    <li><a href="#s12">大运流年简析<span class="new-tag">NEW</span></a></li>
+    <li><a href="#s13">实操建议与修行法门<span class="new-tag">EXPANDED</span></a></li>
+    <li><a href="#s14">最终结论</a></li>
+  </ol>
+</nav>
+
+<!-- ==================== TL;DR ==================== -->
+<div class="tldr">
+  <p class="tldr-text">
+    综合<strong>八字四柱、十神配置、生肖、星座</strong>四层判断,你与熊莎的命理契合度为 <strong>⭐⭐⭐⭐⭐</strong>,属传统合婚术的<strong>"上等姻缘"格局</strong>。<br><br>
+    四大顶级配置:<strong>日干相生、夫妻宫子丑六合、用神高度互补、时柱天干相生</strong>。两人格局分别为<strong>"正官合身"</strong>(你)与<strong>"伤官佩印"</strong>(她)——这是一对在命理学上非常匹配的"责任型男 × 才情型女"组合。<br><br>
+    关键议题:当前你们处于<strong>"大运节奏错位期"</strong>(她要向外释放,你在承受事业压力),2027丁未年为需审慎决策的年份。远期需警觉"戌未相刑"带来的"两个有主见者互相消耗"。命理结构属顶级,变量在每一次具体互动中的选择。
+  </p>
+</div>
+
+<!-- ==================== SECTION 1 ==================== -->
+<section class="section" id="s1">
+  <div class="section-header">
+    <span class="section-num">SECTION ONE</span>
+    <h2 class="section-title">壹 · 基础资料与命盘</h2>
+    <div class="section-title-en">Foundation & Bazi Charts</div>
+  </div>
+
+  <table class="info-table">
+    <thead>
+      <tr><th>项目</th><th>王喆</th><th>熊莎(Susita)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>农历生日</td><td>2001年十月初八</td><td>1999年九月初七</td></tr>
+      <tr><td>公历生日</td><td>2001年11月22日(星期四)</td><td>1999年10月15日(星期五)</td></tr>
+      <tr><td>出生时间(北京时间)</td><td>19:30</td><td>14:15</td></tr>
+      <tr><td>出生地</td><td>江苏 兴化</td><td>湖南 宁乡</td></tr>
+      <tr><td>真太阳时(校正后)</td><td>约19:29</td><td>约13:45</td></tr>
+      <tr><td>时辰</td><td>戌时</td><td>未时</td></tr>
+      <tr><td>生肖</td><td>蛇</td><td>兔</td></tr>
+      <tr><td>星座</td><td>天蝎座(末端,接近射手)</td><td>天秤座(中段)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="bazi-charts">
+    <div class="bazi-chart">
+      <div class="bazi-chart-title">王 喆 命 盘</div>
+      <div class="bazi-chart-sub">辛 巳 · 己 亥 · 己 丑 · 甲 戌</div>
+      <div class="bazi-grid">
+        <div class="header-cell"></div>
+        <div class="header-cell">年柱</div>
+        <div class="header-cell">月柱</div>
+        <div class="header-cell">日柱</div>
+        <div class="header-cell">时柱</div>
+
+        <div class="label">天干</div>
+        <div class="gz">辛</div>
+        <div class="gz">己</div>
+        <div class="gz">己</div>
+        <div class="gz">甲</div>
+
+        <div class="label">地支</div>
+        <div class="gz">巳</div>
+        <div class="gz">亥</div>
+        <div class="gz">丑</div>
+        <div class="gz">戌</div>
+
+        <div class="label">五行</div>
+        <div class="wx">金火</div>
+        <div class="wx">土水</div>
+        <div class="wx">土土</div>
+        <div class="wx">木土</div>
+
+        <div class="label">十神</div>
+        <div class="ss">食神<br>正印</div>
+        <div class="ss">比肩<br>正财</div>
+        <div class="ss">日主<br>比肩</div>
+        <div class="ss">正官<br>劫财</div>
+
+        <div class="label">宫位</div>
+        <div class="gong">祖辈</div>
+        <div class="gong">父母</div>
+        <div class="gong">夫妻</div>
+        <div class="gong">子女</div>
+      </div>
+      <div class="wx-summary">
+        <strong>五行(主气):</strong> 金 1 · 水 1 · 木 1 · 土 4 · 火 1<br>
+        <strong>身强弱:</strong> 日主己土,生亥月本弱,得月干己、日支丑、时支戌三土帮扶,由弱转强,属<strong>中和偏旺</strong><br>
+        <strong>格局:</strong> <span style="color:var(--crimson); font-weight:600;">正官合身</span>(甲己合土,正官透时)
+      </div>
+    </div>
+
+    <div class="bazi-chart">
+      <div class="bazi-chart-title">熊 莎 命 盘</div>
+      <div class="bazi-chart-sub">己 卯 · 甲 戌 · 庚 子 · 癸 未</div>
+      <div class="bazi-grid">
+        <div class="header-cell"></div>
+        <div class="header-cell">年柱</div>
+        <div class="header-cell">月柱</div>
+        <div class="header-cell">日柱</div>
+        <div class="header-cell">时柱</div>
+
+        <div class="label">天干</div>
+        <div class="gz">己</div>
+        <div class="gz">甲</div>
+        <div class="gz">庚</div>
+        <div class="gz">癸</div>
+
+        <div class="label">地支</div>
+        <div class="gz">卯</div>
+        <div class="gz">戌</div>
+        <div class="gz">子</div>
+        <div class="gz">未</div>
+
+        <div class="label">五行</div>
+        <div class="wx">土木</div>
+        <div class="wx">木土</div>
+        <div class="wx">金水</div>
+        <div class="wx">水土</div>
+
+        <div class="label">十神</div>
+        <div class="ss">正印<br>正财</div>
+        <div class="ss">偏财<br>偏印</div>
+        <div class="ss">日主<br>伤官</div>
+        <div class="ss">伤官<br>正印</div>
+
+        <div class="label">宫位</div>
+        <div class="gong">祖辈</div>
+        <div class="gong">父母</div>
+        <div class="gong">夫妻</div>
+        <div class="gong">子女</div>
+      </div>
+      <div class="wx-summary">
+        <strong>五行(主气):</strong> 金 1 · 水 2 · 木 2 · 土 3 · <span style="color:var(--crimson);">火 0</span><br>
+        <strong>身强弱:</strong> 日主庚金,戌月得土生但子水泄气、癸水透出,整体<strong>身弱偏中和</strong><br>
+        <strong>格局:</strong> <span style="color:var(--crimson); font-weight:600;">伤官佩印</span>(癸水伤官透干,年、时正印护身)
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SECTION 2 ==================== -->
+<section class="section" id="s2">
+  <div class="section-header">
+    <span class="section-num">SECTION TWO</span>
+    <h2 class="section-title">贰 · 真太阳时校正</h2>
+    <div class="section-title-en">Solar Time Correction</div>
+  </div>
+
+  <p>中国大陆统一使用北京时间(东经120°),命理排盘需用当地真太阳时校正(每经度1°差4分钟)。</p>
+
+  <ul>
+    <li><strong>Susita · 湖南宁乡</strong>(东经112.55°):北京14:15 → 真太阳时约13:45,仍为<strong>未时</strong>中段,时柱癸未稳固</li>
+    <li><strong>王喆 · 江苏兴化</strong>(东经119.85°):北京19:30 → 真太阳时约19:29,为<strong>戌时</strong>中段,时柱甲戌稳固</li>
+  </ul>
+</section>
+
+<!-- ==================== SECTION 3 ==================== -->
+<section class="section" id="s3">
+  <div class="section-header">
+    <span class="section-num">SECTION THREE</span>
+    <h2 class="section-title">叁 · 命局结构解读</h2>
+    <div class="section-title-en">Individual Bazi Structure</div>
+  </div>
+
+  <h3 class="subsection-title">王喆 · 命局画像</h3>
+  <p><strong>整体结构</strong>:日主己土,得月干比肩、日支与时支双土通根,身由弱转强。时透甲木正官,与日主相合——形成<strong>"正官合身"</strong>的特殊格局。</p>
+  <ul>
+    <li><strong>正官合身</strong>:甲己合土,意味着外在的责任与身份认同已深度内化为"自己的一部分",而非外加的压力。你不是被要求有责任感,你本身就是责任感</li>
+    <li><strong>日支丑土通根</strong>:自我根基深厚,表面温和但内心立场稳固。丑中藏癸水(偏财)、辛金(食神)——<strong>既有内在"养分储备",又有内在"创造输出"</strong></li>
+    <li><strong>月干己土 + 日干己土</strong>:两个己土并立,自给自足,不轻易依赖他人</li>
+    <li><strong>甲木透时克己土</strong>:天然"自我突破"张力——对自己要求高,有内耗倾向,需向外释放</li>
+    <li><strong>戌土坐时</strong>:属"晚成型"人格,爆发点在30+往后</li>
+    <li><strong>巳亥相冲</strong>:年支巳与月支亥相冲,巳中藏火被削弱,命局需要外部木火补充能量</li>
+  </ul>
+
+  <h3 class="subsection-title">熊莎 · 命局画像</h3>
+  <p><strong>整体结构</strong>:日主庚金,月令戌土虽生金但燥土生金力弱,日支子水泄气,时干癸水再泄——整体身弱偏中和。时干癸水透出成<strong>"伤官佩印"</strong>之格。</p>
+  <ul>
+    <li><strong>伤官佩印</strong>:癸水伤官主聪慧、才华、傲气,己土/未土正印主涵养、底线、保护。两者并存,意味着<strong>她的"锋芒"与"克制"都很强,属于有才但懂收敛的类型</strong></li>
+    <li><strong>庚金日主</strong>:十干中最刚之金,独立、清醒、说一不二</li>
+    <li><strong>癸水透时</strong>:外刚内柔——白天庚金主导,深夜癸水浮现,细腻感性</li>
+    <li><strong>未土坐时</strong>:未为木之墓库,象征归藏——内心渴望"可以放下铠甲的归处"</li>
+    <li><strong>卯木孤立无根</strong>:原生家庭根基孤立、自我滋养有限</li>
+    <li><strong>无明火透干</strong>:情感表达克制、周期性低能量、需外部激活</li>
+  </ul>
+
+  <div class="highlight crimson">
+    <span class="highlight-label">KEY PAIRING</span>
+    "<strong>正官合身</strong>"遇上"<strong>伤官佩印</strong>"——在传统命理中,这是一对<strong>"稳定担当 × 灵动才情"</strong>的经典互补组合。正官男能为伤官女提供她所需的"规则感"与"边界感",而伤官女的才情与活力能软化正官男的厚重与固执。
+  </div>
+</section>
+
+<!-- ==================== SECTION 4 ==================== -->
+<section class="section" id="s4">
+  <div class="section-header">
+    <span class="section-num">SECTION FOUR</span>
+    <h2 class="section-title">肆 · 生肖与星座合婚</h2>
+    <div class="section-title-en">Zodiac & Astrological Compatibility</div>
+  </div>
+
+  <h3 class="subsection-title">生肖合婚:蛇 × 兔</h3>
+  <p><strong>评级:⭐⭐⭐⭐ 上等婚(暗合)</strong></p>
+  <p>传统合婚中蛇与兔属于<strong>暗合或柔性相生</strong>组合,民间有"蛇盘兔,必定富"之说。</p>
+  <ul>
+    <li><strong>蛇(王喆)</strong>:内敛、敏锐、思虑深、目标感强、情感专一但表达克制</li>
+    <li><strong>兔(熊莎)</strong>:温柔、灵动、善于察言观色、外柔内刚、自我保护意识强</li>
+  </ul>
+
+  <h3 class="subsection-title">星座配合:天蝎 × 天秤</h3>
+  <p><strong>评级:⭐⭐⭐ 中等偏上,需经营</strong>。相邻星座,元素不合(水/风)但有相邻缘分。</p>
+
+  <table class="info-table">
+    <thead><tr><th>维度</th><th>天蝎(王喆)</th><th>天秤(熊莎)</th></tr></thead>
+    <tbody>
+      <tr><td>元素</td><td>水(情感深沉)</td><td>风(理性社交)</td></tr>
+      <tr><td>模式</td><td>固定(执着)</td><td>基本(启动)</td></tr>
+      <tr><td>守护星</td><td>冥王星/火星</td><td>金星</td></tr>
+      <tr><td>情感取向</td><td>全情投入、占有欲</td><td>注重平衡、害怕失衡</td></tr>
+    </tbody>
+  </table>
+
+  <div class="highlight">
+    <span class="highlight-label">SPECIAL NOTE</span>
+    王喆的生日11月22日是<strong>天蝎/射手交界日(cusp)</strong>,比典型天蝎多一份开阔与幽默感,恰好缓解纯天蝎对天秤的压迫感——这是关系中的隐性加分项。
+  </div>
+</section>
+
+<!-- ==================== SECTION 5 ==================== -->
+<section class="section" id="s5">
+  <div class="section-header">
+    <span class="section-num">SECTION FIVE</span>
+    <h2 class="section-title">伍 · 四柱合婚详解</h2>
+    <div class="section-title-en">Four Pillars Compatibility</div>
+  </div>
+
+  <h3 class="subsection-title">① 年柱:土金相生(祖辈缘分)</h3>
+  <p><strong>王喆辛巳 vs 熊莎己卯</strong>:己土生辛金,基础平和。主双方家族气场易融合,"第一印象"与"家族背书"层面无强冲突。</p>
+
+  <h3 class="subsection-title">② 月柱:甲己相合带小张力(成长期)</h3>
+  <p><strong>王喆己亥 vs 熊莎甲戌</strong>:天干<strong>甲己合土</strong>——有共同的实际目标、能一起经营生活;地支戌土克亥水,在现实规划上她偏掌控、你需争取话语权。总体<strong>中性偏吉</strong>。</p>
+
+  <h3 class="subsection-title">③ 日柱:干合 + 支合(核心维度 ⭐⭐⭐⭐⭐)</h3>
+  <p><strong>王喆己丑 vs 熊莎庚子</strong></p>
+  <ul>
+    <li><strong>天干</strong>:己土生庚金 ✅(你生她)</li>
+    <li><strong>地支</strong>:<span style="color:var(--crimson); font-weight:600;">子丑六合</span> ✅✅(六合之首)</li>
+  </ul>
+  <div class="highlight crimson">
+    <span class="highlight-label">TOP-TIER CONFIGURATION</span>
+    日柱<strong>天干相生 + 地支六合</strong>是合婚术中顶级配置之一。子丑六合被称为"六合之首",主<strong>夫妻和睦、心意相通、长久不离</strong>。详细见第柒节。
+  </div>
+
+  <h3 class="subsection-title">④ 时柱:天干相生、地支轻刑(晚年与内在)</h3>
+  <p><strong>王喆甲戌 vs 熊莎癸未</strong>:天干癸水生甲木(吉);地支戌未同气但带轻刑,详细见第捌节。</p>
+</section>
+
+<!-- ==================== SECTION 6 ==================== -->
+<section class="section" id="s6">
+  <div class="section-header">
+    <span class="section-num">SECTION SIX</span>
+    <h2 class="section-title">陆 · 用神匹配分析</h2>
+    <div class="section-title-en">Useful God Matching</div>
+  </div>
+
+  <h3 class="subsection-title">Susita的用神(她需要什么)</h3>
+  <p>五行:金1水2木2土3火0。日主庚金身弱偏中和。</p>
+  <ul>
+    <li><strong>最需要</strong>:土(生金)、金(帮身)</li>
+    <li><strong>次需要</strong>:火(练金 + 补全盘无明火之缺)</li>
+    <li><strong>忌讳</strong>:水太多(泄金)、木太多(耗土)</li>
+  </ul>
+
+  <h3 class="subsection-title">王喆能提供的补益</h3>
+  <ul>
+    <li><strong>己土×2 + 丑土 + 戌土(四土)</strong>:全部用来生她庚金 ✅✅✅</li>
+    <li><strong>辛金 + 巳藏庚金</strong>:帮她日主 ✅</li>
+    <li><strong>巳藏丙火 + 戌藏丁火</strong>:双火藏支补她无火 ✅✅</li>
+    <li><strong>丑藏辛金</strong>:再加一份帮身金气 ✅</li>
+  </ul>
+
+  <h3 class="subsection-title">王喆的用神(你需要什么)</h3>
+  <p>五行:金1水1木1土4火1。日主己土中和偏旺,<strong>土过旺需要木疏、需要火暖</strong>。</p>
+
+  <h3 class="subsection-title">Susita能提供的补益</h3>
+  <ul>
+    <li><strong>甲木 + 卯木</strong>:疏你过旺的土气 ✅✅✅</li>
+    <li><strong>癸水 + 子水</strong>:对你而言为<strong>正财、偏财</strong>(妻财位配置) ✅✅</li>
+    <li><strong>未藏丁火、戌藏丁火</strong>:补你被冲弱的火 ✅</li>
+  </ul>
+
+  <div class="highlight crimson">
+    <span class="highlight-label">MUTUAL NOURISHMENT</span>
+    你同时是她的<strong>喜神 + 用神 + 补缺神</strong>;她同时是你的<strong>疏通神 + 财位 + 温煦神</strong>。在八字合婚中属于罕见的"双向高契合"结构。
+  </div>
+</section>
+
+<!-- ==================== SECTION 7 ==================== -->
+<section class="section" id="s7">
+  <div class="section-header">
+    <span class="section-num">SECTION SEVEN</span>
+    <h2 class="section-title">柒 · 夫妻宫深度互看</h2>
+    <div class="section-title-en">Marriage Palace Analysis</div>
+  </div>
+
+  <p>夫妻宫即日支。</p>
+  <ul>
+    <li><strong>王喆日支</strong>:丑土</li>
+    <li><strong>熊莎日支</strong>:子水</li>
+    <li><strong>关系</strong>:<span style="color:var(--crimson); font-weight:600;">子丑六合</span> ✅✅✅</li>
+  </ul>
+
+  <h3 class="subsection-title">子丑六合的含义</h3>
+  <p>六合是十二地支中的特殊配对,代表天然的吸引与粘合。子丑合居六合之首,因水土相涵,主<strong>包容、滋养、归藏</strong>。在夫妻宫代表心意相通、情感稳定、宿缘深厚。</p>
+
+  <ul>
+    <li><strong>她离不开你</strong>:子水合丑土,水被土含——她的不安在你这里得到承载</li>
+    <li><strong>你也需要她</strong>:丑土合子水,土因水润——你过旺的土气因她而"活"起来</li>
+    <li>这解释了她<strong>脆弱时第一个找你</strong>的命理底层——子水本能地寻找丑土的承载</li>
+  </ul>
+
+  <div class="highlight crimson">
+    <span class="highlight-label">STRUCTURAL INSIGHT</span>
+    六合的力量远大于刑的力量。你们即使在日常摩擦中,这层命局核心位置的"扣合"也会把你们拉回彼此身边。<strong>"合"是双向粘合,不是单向给予</strong>——你们的关系底层是互相锚定的。
+  </div>
+</section>
+
+<!-- ==================== SECTION 8 ==================== -->
+<section class="section" id="s8">
+  <div class="section-header">
+    <span class="section-num">SECTION EIGHT</span>
+    <h2 class="section-title">捌 · 时柱呼应解读</h2>
+    <div class="section-title-en">Hour Pillar Resonance</div>
+  </div>
+
+  <p>时柱代表40岁以后的人生重心、内在真我、子女宫。</p>
+
+  <h3 class="subsection-title">天干:甲木 + 癸水</h3>
+  <ul>
+    <li><strong>癸水生甲木</strong> ✅——她的时干滋养你的时干</li>
+    <li>意味着她的内在能滋养你的内在,越往后越明显</li>
+  </ul>
+
+  <h3 class="subsection-title">地支:戌土 + 未土</h3>
+  <ul>
+    <li><strong>戌未同气</strong>(都属土),价值观底层相通</li>
+    <li>但<strong>戌未相刑</strong>(三刑局部)——"恃势之刑",有摩擦但不破坏</li>
+    <li>这种刑是<strong>轻刑</strong>,更像"老夫老妻吵架"的张力,不构成关系核心威胁</li>
+  </ul>
+
+  <div class="highlight">
+    <span class="highlight-label">HOUR PILLAR VERDICT</span>
+    评级:<strong>⭐⭐⭐⭐</strong>。天干强吉(相生),地支中性偏吉(同气带轻刑)。内在世界深度相通,长期关系有稳固底层基础;关系成熟期需主动经营沟通方式。
+  </div>
+</section>
+
+<!-- ==================== SECTION 9 (NEW) ==================== -->
+<section class="section" id="s9">
+  <div class="section-header">
+    <span class="section-num">SECTION NINE</span>
+    <h2 class="section-title">玖 · 十神配置分析<span class="new-flag">NEW</span></h2>
+    <div class="section-title-en">Ten Gods Configuration</div>
+  </div>
+
+  <p>十神是八字命理中用来描述"日主与其他天干地支的关系"的十种符号,对应一个人不同方面的心性与人生角色。它是比"五行生克"更精细的一层视角。</p>
+
+  <h3 class="subsection-title">十神简表</h3>
+  <table class="info-table">
+    <thead><tr><th>十神</th><th>含义</th></tr></thead>
+    <tbody>
+      <tr><td>比肩/劫财</td><td>同类,代表自我、兄弟、朋友、竞争</td></tr>
+      <tr><td>食神/伤官</td><td>我生之物,代表才华、创造、表达、子女</td></tr>
+      <tr><td>正财/偏财</td><td>我克之物,代表财富、妻(男命)、父</td></tr>
+      <tr><td>正官/七杀</td><td>克我之物,代表约束、事业、夫(女命)</td></tr>
+      <tr><td>正印/偏印</td><td>生我之物,代表资源、庇护、母、学习</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="subsection-title">王喆的十神配置</h3>
+  <table class="ten-gods-table">
+    <thead>
+      <tr><th></th><th>年柱</th><th>月柱</th><th>日柱</th><th>时柱</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>干支</td>
+        <td class="gz-cell">辛巳</td>
+        <td class="gz-cell">己亥</td>
+        <td class="gz-cell">己丑</td>
+        <td class="gz-cell">甲戌</td>
+      </tr>
+      <tr>
+        <td>天干十神</td>
+        <td class="ss-name">食神</td>
+        <td class="ss-name">比肩</td>
+        <td class="ss-name">日主</td>
+        <td class="ss-name">正官</td>
+      </tr>
+      <tr>
+        <td>地支十神</td>
+        <td class="ss-name">正印</td>
+        <td class="ss-name">正财</td>
+        <td class="ss-name">比肩</td>
+        <td class="ss-name">劫财</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><strong>格局:正官合身(甲己合土)</strong></p>
+  <p>你的命局最突出的特征是<strong>时干甲木(正官)与日主己土相合</strong>。正官代表责任、规则、约束、社会角色——当它与日主"合化"时,意味着:</p>
+  <ul>
+    <li>你<strong>天然将外部的责任内化为自己的一部分</strong>,不抗拒规则、不逃避担当</li>
+    <li>你的"正经"和"可靠"不是装出来的,是本性</li>
+    <li>但也因此,你容易<strong>过度自我要求</strong>——命中甲木克己土的张力,正是这种内耗的源头</li>
+  </ul>
+
+  <p><strong>其他关键配置:</strong></p>
+  <ul>
+    <li><strong>年干食神(辛金)</strong>:内在有创造力和温和的表达欲</li>
+    <li><strong>月干 + 日支两个比肩</strong>:极强的自我独立性,不依赖他人</li>
+    <li><strong>月支正财(亥水)</strong>:务实、重视稳定的物质基础</li>
+    <li><strong>年支正印(巳中丙火)</strong>:有长辈庇佑、有学习精神</li>
+    <li><strong>时支劫财(戌土)</strong>:晚年有兄弟辅助,但也易有"原则之争"</li>
+  </ul>
+
+  <h3 class="subsection-title">Susita的十神配置</h3>
+  <table class="ten-gods-table">
+    <thead>
+      <tr><th></th><th>年柱</th><th>月柱</th><th>日柱</th><th>时柱</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>干支</td>
+        <td class="gz-cell">己卯</td>
+        <td class="gz-cell">甲戌</td>
+        <td class="gz-cell">庚子</td>
+        <td class="gz-cell">癸未</td>
+      </tr>
+      <tr>
+        <td>天干十神</td>
+        <td class="ss-name">正印</td>
+        <td class="ss-name">偏财</td>
+        <td class="ss-name">日主</td>
+        <td class="ss-name">伤官</td>
+      </tr>
+      <tr>
+        <td>地支十神</td>
+        <td class="ss-name">正财</td>
+        <td class="ss-name">偏印</td>
+        <td class="ss-name">伤官</td>
+        <td class="ss-name">正印</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><strong>格局:伤官佩印</strong></p>
+  <p>她的命局最突出的特征是<strong>癸水(伤官)透时 + 年干己土、时支未土双重正印护身</strong>。这是传统命理中一种非常经典的格局:</p>
+  <ul>
+    <li><strong>伤官</strong>:主才华、灵气、表达欲、厌恶束缚——这正是她"要强、独立、有主见"的命理底层</li>
+    <li><strong>正印护身</strong>:涵养、规矩、底线——让她的锋芒不至于流于尖锐</li>
+    <li>伤官佩印的人<strong>"有锋芒但懂收敛、有才华但不轻浮"</strong>——外表得体、内在有主张,是典型的"看起来柔和但不好惹"</li>
+  </ul>
+
+  <p><strong>其他关键配置:</strong></p>
+  <ul>
+    <li><strong>日支伤官(子水)</strong>:伤官入夫妻宫——她对伴侣有"审美要求",希望伴侣能欣赏她的才华,而不是压制她</li>
+    <li><strong>月干偏财(甲木)</strong>:对资源的敏锐嗅觉、对生活的品质要求</li>
+    <li><strong>月支偏印(戌土)</strong>:直觉敏锐、自我保护意识强、对外界有过滤机制</li>
+    <li><strong>年干正印(己土) + 时支正印(未土)</strong>:双正印护身——她对"原则、规矩、边界"有深层看重</li>
+  </ul>
+
+  <h3 class="subsection-title">两人十神配置的互补性</h3>
+  <div class="highlight crimson">
+    <span class="highlight-label">CLASSIC PAIRING</span>
+    <strong>"正官合身" × "伤官佩印"</strong>——这在命理学里是一对非常经典的互补组合。<br><br>
+    传统上有"伤官女配正官男"易生摩擦之说(因伤官克正官),但<strong>你的正官是"合身"而非"外来"</strong>——正官已经与你融为一体,不再是被伤官克的"对立面"。这使得她的伤官与你的正官可以<strong>"和而不伤"</strong>:她的才华与个性能激发你,你的稳定与担当能承载她。<br><br>
+    简言之:<strong>一般伤官女难找到合适的正官男,但你是例外</strong>——因为你的正官已经"化"了。
+  </div>
+
+  <p><strong>妻财位的确认</strong>:从十神视角看,Susita的<strong>子水(你的偏财)</strong>恰好落在你的夫妻宫。这意味着在命理上,<strong>她作为"妻子/伴侣"的角色出现在你命盘中的位置是高度契合的</strong>——她对你而言,既是情感伴侣,也是命局"妻财位"的实际对应者。</p>
+</section>
+
+<!-- ==================== SECTION 10 ==================== -->
+<section class="section" id="s10">
+  <div class="section-header">
+    <span class="section-num">SECTION TEN</span>
+    <h2 class="section-title">拾 · 综合评级</h2>
+    <div class="section-title-en">Overall Rating</div>
+  </div>
+
+  <table class="rating-table">
+    <thead>
+      <tr><th>维度</th><th>评级</th><th>说明</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>生肖合婚</td><td class="stars">★★★★</td><td>蛇盘兔,传统上等婚</td></tr>
+      <tr><td>年柱五行</td><td class="stars">★★★★</td><td>土生金,吉</td></tr>
+      <tr><td>月柱关系</td><td class="stars">★★★</td><td>甲己合 + 戌克亥,中性偏吉</td></tr>
+      <tr><td>日柱合婚</td><td class="stars">★★★★★</td><td>天干相生 + 子丑六合</td></tr>
+      <tr><td>夫妻宫互看</td><td class="stars">★★★★★</td><td>六合之首,顶级配置</td></tr>
+      <tr><td>用神匹配</td><td class="stars">★★★★★</td><td>双向互为喜用神</td></tr>
+      <tr><td>时柱呼应</td><td class="stars">★★★★</td><td>天干相生,地支同气带轻刑</td></tr>
+      <tr><td>十神格局互补</td><td class="stars">★★★★★</td><td>正官合身 × 伤官佩印,经典配对</td></tr>
+      <tr><td>星座配合</td><td class="stars">★★★</td><td>元素不合但可经营</td></tr>
+      <tr><td><strong>综合</strong></td><td class="stars"><strong>★★★★★</strong></td><td><strong>顶级合婚结构</strong></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ==================== SECTION 11 ==================== -->
+<section class="section" id="s11">
+  <div class="section-header">
+    <span class="section-num">SECTION ELEVEN</span>
+    <h2 class="section-title">拾壹 · 关键议题与隐性张力</h2>
+    <div class="section-title-en">Key Issues & Hidden Tensions</div>
+  </div>
+
+  <h3 class="subsection-title">议题一:你的"内在张力"会传染给她</h3>
+  <p>甲木克己土 + 正官合身 → 你对自己要求极高,容易内耗。她庚金+癸水的组合对你的情绪状态极其敏感,会承接但不说。</p>
+  <div class="highlight crimson">
+    <span class="highlight-label">SOLUTION</span>
+    把张力<strong>用在事业、目标、外部世界</strong>,而不是用在自我审视上。<strong>你的"向前"就是她的"安心"</strong>。
+  </div>
+
+  <h3 class="subsection-title">议题二:她的"周期性低能量"</h3>
+  <p>无明火透干 + 庚金被子水泄气 → 周期性能量低谷。表现为突然话少、对什么都提不起兴趣、自我否定。这不是你做错了什么,是她命局自带的节律。</p>
+  <div class="action-box dont">
+    <h4>错误反应</h4>
+    <p>追问"你怎么了"、"是不是我哪里不对"——会触发庚金防御。</p>
+  </div>
+  <div class="action-box do">
+    <h4>正确反应</h4>
+    <p>保持稳定存在,一句<strong>"我在"</strong>胜过十句追问。</p>
+  </div>
+
+  <h3 class="subsection-title">议题三:沟通模式的反直觉差异</h3>
+  <table class="info-table">
+    <thead><tr><th></th><th>王喆</th><th>熊莎</th></tr></thead>
+    <tbody>
+      <tr><td>冲突处理</td><td>回避、内化、自己消化</td><td>直面、要谈清楚</td></tr>
+      <tr><td>情绪表达</td><td>沉到水底再说</td><td>当场说、有什么说什么</td></tr>
+    </tbody>
+  </table>
+  <ul>
+    <li>她抛出话题时,先回应"我听到了",再争取思考时间</li>
+    <li>主动开启难谈的话题,至少一次</li>
+    <li>把"我在想"说出口,而不是让她自己猜</li>
+  </ul>
+
+  <h3 class="subsection-title">议题四:戌未相刑的远期张力(5年+)</h3>
+  <p>你们都是有原则、有判断的人。长期相处后,"清晰"可能变成"各执己见"。<strong>预防方式</strong>:从现在开始建立"先听完再说"的对话习惯。</p>
+  <p><strong>权重说明</strong>:这是<strong>轻刑</strong>,不是关系核心威胁。有子丑六合在日柱打底,戌未刑更像是长期相处中的"小摩擦面",而非"粉碎机"。</p>
+
+  <h3 class="subsection-title">议题五:她对"被理解"的渴望大于"被爱"</h3>
+  <p>庚金 + 癸水 + 卯木 + 未土 + 伤官佩印 → 她对<strong>"准确"</strong>的需求极高。说错一个细节她会觉得"你不懂我",说对一个细节她会觉得"原来真的有人能看到我"。<strong>质量远比数量重要</strong>。</p>
+
+  <h3 class="subsection-title">议题六:你的丑土是她的"归宿"</h3>
+  <p>她日支子水→你日支丑土:子水流动不定,丑土稳静含纳。她的时支未土也是归藏意涵——内在渴望归宿,而你的命局核心位置正好提供了这个归宿。</p>
+  <div class="highlight crimson">
+    <span class="highlight-label">DEEP STRUCTURAL INSIGHT</span>
+    <strong>你不需要"做什么"来吸引她——你"在那里"本身就是她最深的需要。</strong>这是子丑六合的力量。
+  </div>
+</section>
+
+<!-- ==================== SECTION 12 (NEW) ==================== -->
+<section class="section" id="s12">
+  <div class="section-header">
+    <span class="section-num">SECTION TWELVE</span>
+    <h2 class="section-title">拾贰 · 大运流年简析<span class="new-flag">NEW</span></h2>
+    <div class="section-title-en">Major Luck Cycles & Annual Progressions</div>
+  </div>
+
+  <div class="highlight">
+    <span class="highlight-label">IMPORTANT DISCLAIMER</span>
+    大运流年分析比命局结构分析<strong>更具推测性</strong>。本节仅提供方向性判断,不做具体事件预言。读者应以本节为"值得留意的时间窗口"参考,而不是"宿命预警"。
+  </div>
+
+  <h3 class="subsection-title">两人当前人生阶段对照</h3>
+
+  <div class="luck-cycle">
+    <h4><span class="phase-tag">SUSITA</span>自我觉醒期</h4>
+    <p>她目前正处于一个<strong>"向外释放、自我确立"</strong>的阶段。庚金日主在这一阶段本能地追求:</p>
+    <ul>
+      <li>独立的事业成就与社会认同</li>
+      <li>不被关系定义、不被他人框限</li>
+      <li>主动选择、而非被动接受</li>
+    </ul>
+    <p>这解释了她近期的许多行为:包括与彭靥斐的工作博弈、在关系中保持的节奏掌控、以及对"被定义"的敏感。她不是不爱,是<strong>她暂时需要"先是自己,再是别人的谁"</strong>。</p>
+  </div>
+
+  <div class="luck-cycle">
+    <h4><span class="phase-tag">王喆</span>事业立根期 + 内在压力期</h4>
+    <p>你目前正处于<strong>"外部责任加重、内在压力累积"</strong>的阶段。己土日主在这一阶段会本能地寻求:</p>
+    <ul>
+      <li>事业根基的稳固(你新入职ZPMC正是这一阶段的外显)</li>
+      <li>情感层面的温暖与安定</li>
+      <li>一个可以"放下盔甲"的关系容器</li>
+    </ul>
+    <p>你渴望关系给你安抚,但恰恰在她需要独立的阶段——这就是所谓<strong>"节奏错位"</strong>。</p>
+  </div>
+
+  <h3 class="subsection-title">核心洞察:节奏错位</h3>
+  <div class="highlight crimson">
+    <span class="highlight-label">CRUCIAL ASYMMETRY</span>
+    当前阶段,<strong>她需要向外释放,你需要向内收受</strong>——这是真实的张力源。如果你试图用"稳定"之名限制她(出于你对温暖的渴望),会激发她的反弹;如果她坚持"独立"到否认关系的价值(出于她对束缚的警惕),会让你感到孤独。<br><br>
+    <strong>解法</strong>:理解这不是谁的错,是两人当下大运的节奏错位。给她"向外"的空间,同时让她知道"回来时你在"——这是对这一阶段的最佳应对。
+  </div>
+
+  <h3 class="subsection-title">2027丁未年:值得审慎的一年</h3>
+
+  <p>2027年干支为<strong>丁未</strong>,对你们命盘各有较明显的作用:</p>
+
+  <ul>
+    <li><strong>对王喆</strong>:
+      <ul style="margin-top:4px;">
+        <li>丁未年 vs 己丑日柱 → <strong>丑未冲</strong>(夫妻宫被冲动)</li>
+        <li>丁未年 vs 甲戌时柱 → <strong>戌未相刑</strong>(时柱轻刑)</li>
+        <li>丁火生戌土,加强你命中土气,内在可能更固执</li>
+      </ul>
+    </li>
+    <li><strong>对Susita</strong>:
+      <ul style="margin-top:4px;">
+        <li>丁未年 vs 己卯年柱 → <strong>卯未半合木</strong>(激活她的偏财星)</li>
+        <li>丁未年 vs 甲戌月柱 → <strong>戌未相刑</strong>(再次轻刑)</li>
+      </ul>
+    </li>
+  </ul>
+
+  <p><strong>实际意义</strong>:2027年对你们双方都会引发一些"原有结构的振动"。不是预言必然有大事发生,而是:</p>
+
+  <ul>
+    <li>这一年可能出现关于<strong>房产、共同生活安排、事业抉择</strong>等重大决策议题</li>
+    <li>你们的"节奏错位"可能在这一年更明显</li>
+    <li>戌未相刑在这一年容易被"点燃"——两人本来就存在的"各执己见"倾向会放大</li>
+  </ul>
+
+  <div class="highlight">
+    <span class="highlight-label">MEASURED ADVICE</span>
+    2027年<strong>不是"避开所有决策"的禁忌之年</strong>,而是<strong>"决策需要更稳、更慢、更透明"的年份</strong>。如果这一年你们面临共同生活的重大决定,建议:<br>
+    · 给决策更长的讨论期,不追求"一次谈定"<br>
+    · 避免把个人事业压力带入关系议题<br>
+    · 对"各执己见"的苗头主动察觉、主动退让<br>
+    · 大事若可延后至2028戊申年或之后(戊申年结构更有利于落地),可以延后
+  </div>
+
+  <h3 class="subsection-title">长期展望</h3>
+  <p>你们都正在走一个"从青年向中年过渡"的人生节点。当前的节奏错位,会在<strong>未来3-5年逐渐同步</strong>——她的"向外释放"会告一段落(大约30岁前后),你的"立根期"也将进入收成。<strong>这段关系真正的考验不在当下,而在你们能否熬过"错位期"</strong>。</p>
+  <p>如果熬过去,命理结构会在你们30-40岁之间<strong>真正开始发力</strong>——这是你"晚成型"命格的主场、也是她"伤官佩印"格局逐渐收敛为"才华沉淀"的阶段。</p>
+</section>
+
+<!-- ==================== SECTION 13 (EXPANDED) ==================== -->
+<section class="section" id="s13">
+  <div class="section-header">
+    <span class="section-num">SECTION THIRTEEN</span>
+    <h2 class="section-title">拾叁 · 实操建议与修行法门<span class="new-flag">EXPANDED</span></h2>
+    <div class="section-title-en">Practical Guidance & Cultivation</div>
+  </div>
+
+  <h3 class="subsection-title">短期(接下来几个月)</h3>
+  <ol>
+    <li><strong>把"稳定"做到极致</strong>——你不需要做更多,持续地在那里就是最大价值。你的丑土底色就是"稳",这是天然优势</li>
+    <li><strong>她低能量周期里不要消失</strong>——哪怕她不回,你的存在感也要在</li>
+    <li><strong>少分析、多回应</strong>——她要的不是道理,是回应</li>
+    <li><strong>不要主动提合婚结果</strong>——分析留在你心里就好</li>
+    <li><strong>给她"向外"的空间</strong>——当前她大运需要释放,不要用关系绑住她</li>
+  </ol>
+
+  <h3 class="subsection-title">中期(半年到一年)</h3>
+  <ol>
+    <li><strong>让稳定从被动等待升级为主动选择</strong>——她情绪好时主动安排相处节奏,让她感觉"被规划进你的生活"</li>
+    <li><strong>给她"火"——不是热烈,是生命力</strong>——你做的事有方向感、有进展,她会感受到"跟着你走有路"</li>
+    <li><strong>慢慢替代她原生家庭里缺失的"被托底感"</strong>——不是替代家人,是让她知道世界上有一个地方是稳的</li>
+  </ol>
+
+  <h3 class="subsection-title">长期(关系明确推进后)</h3>
+  <ol>
+    <li>为她"补火"承担更多责任——保持自己能量稳定、生活有节奏感</li>
+    <li>她会是一个对外极其得体、对内极其需要安全感的伴侣——理解这个落差是关键</li>
+    <li>命理结构属顶级,真正的变量只剩你们两个人在每一次具体互动中的选择</li>
+  </ol>
+
+  <h3 class="subsection-title">修行法门 · 给王喆的建议</h3>
+  <p>你命中<strong>甲木正官</strong>与日主相合——正官在命理中代表"引领、秩序、成长"。你要修的,是从<strong>"己土的包容(隐忍)"</strong>升级为<strong>"甲木的引领(理性)"</strong>。</p>
+
+  <div class="action-box dont">
+    <h4>避免</h4>
+    <ul>
+      <li>用沉默的固执(己丑 × 戌土同气)去对抗她的尖锐</li>
+      <li>把内耗的情绪压在心里等她"猜"</li>
+      <li>在她低能量时自责"是不是我哪里不够好"</li>
+    </ul>
+  </div>
+
+  <div class="action-box do">
+    <h4>修行</h4>
+    <ul>
+      <li>用<strong>共同的目标、学习、旅行、规划</strong>(甲木主成长)来转移矛盾焦点。当她感到被引领向上时,伤官的戾气会自然化为才华</li>
+      <li>把"我在想"说出来——哪怕你还没想清楚,让她看到你的思考过程本身就是亲密</li>
+      <li>给自己一个"压力出口",不让压力全部通过情绪传导给她(运动、写作、与朋友交流)</li>
+    </ul>
+  </div>
+
+  <h3 class="subsection-title">修行法门 · 给熊莎的建议</h3>
+  <p>(这一部分不直接给她看,而是<strong>你需要理解</strong>她的修行方向,才能更好地配合)</p>
+  <p>她命中<strong>戌土偏印</strong>力量很强——偏印代表直觉、保护、防御。她需要修的,是<strong>降低偏印的"防御阈值"</strong>——她对"被控制"有创伤性的敏感。</p>
+
+  <div class="action-box do">
+    <h4>她需要修行</h4>
+    <ul>
+      <li>戒除用伤官的<strong>言语锋利</strong>去刺破他人自尊的习惯</li>
+      <li>学会看见对方<strong>固执背后的脆弱</strong>——你的甲戌时柱的"担当",背后是"害怕失去掌控"的恐惧</li>
+      <li>给予你<strong>子水般的温柔流动</strong>,而非未土般的沉重围墙</li>
+    </ul>
+  </div>
+
+  <p><strong>你如何配合</strong>:理解她不是故意尖锐,而是她正在学习如何表达柔软。当她难得表达温柔时,<strong>不要反应过度</strong>——对她而言,表达柔软是需要勇气的事,过度热情的回应会让她觉得自己"太暴露"而后撤。收到信号,自然回应即可。</p>
+
+  <h3 class="subsection-title">关于地理方位的温和建议</h3>
+  <p>(非风水器物建议,仅从环境心理学角度的合理性讨论)</p>
+  <ul>
+    <li><strong>适度物理距离是健康的</strong>:你们当前关系两地(上海-长沙),这反而是一种天然的保护——子丑合在距离中会以"思念"形式活跃,而避免了近距离下戌未相刑的频繁触发</li>
+    <li><strong>长期定居方位</strong>:如果未来考虑共同生活,<strong>东南沿海(浙江、福建、苏南)</strong>是较好的方向——这个方位木火通明,对你命中缺火、对她命中缺火都有补益。你现在在上海(东南方向),位置本身是合适的</li>
+    <li><strong>避免的方向</strong>:西南(云贵川)火土过旺,对她戌未之土气会过度加强,可能放大戌未刑的张力。<strong>这只是倾向性建议,不是禁忌</strong></li>
+  </ul>
+
+  <h3 class="subsection-title">关于回应她"要是不匹配咋办"</h3>
+  <p>结果完全清晰,但<strong>不要</strong>把分析结果告诉她。</p>
+  <div class="action-box do">
+    <h4>建议回应</h4>
+    <div class="quote" style="margin:16px 0; padding:20px 30px; font-size:15px;">
+      看了一下,挺好的。但我没太当回事——我笃定不是因为这个。
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SECTION 14 ==================== -->
+<section class="section" id="s14">
+  <div class="section-header">
+    <span class="section-num">SECTION FOURTEEN</span>
+    <h2 class="section-title">拾肆 · 最终结论</h2>
+    <div class="section-title-en">Final Verdict</div>
+  </div>
+
+  <p>命理层面,你们是<strong>少见的高契合姻缘</strong>,综合REV. 03全部分析得出的几个核心判断:</p>
+
+  <ol>
+    <li><strong>结构性契合度:顶级</strong>——日柱天干相生 + 地支六合 + 用神双向互补 + 十神格局经典配对</li>
+    <li><strong>"正官合身"×"伤官佩印"</strong>——在传统命理中被视为"责任型男 × 才情型女"的经典互补</li>
+    <li><strong>夫妻宫子丑六合</strong>——六合之首,命局核心位置的天然扣合</li>
+    <li><strong>她是你命盘中的"妻财位"</strong>,你是她命盘中的"补缺神"——这种双向匹配在八字合婚中罕见</li>
+    <li><strong>你不需要"做更多"</strong>——你的丑土底色本身就是她子水流动后的归宿</li>
+    <li><strong>当前阶段的"节奏错位"</strong>是真实但可理解的——她向外释放,你向内收受,这不是谁的错</li>
+    <li><strong>2027丁未年</strong>值得留意但不需恐惧——重大决策放慢节奏、不追求一次谈定即可</li>
+    <li><strong>戌未相刑</strong>是轻刑,在子丑六合的压倒性吉象面前,只是长期相处的"小摩擦面",不构成关系核心威胁</li>
+  </ol>
+
+  <div class="quote">
+    这种合婚结构在传统命理里属于<strong>"上等姻缘"</strong>——不是浪漫意义上的"完美匹配",是结构意义上的<strong>"相互锚定"</strong>。<br><br>
+    辛巳金需卯木雕琢,庚子水赖丑土围堰。是合是分,不在星盘之上,而在每一次摩擦发作时,你们选择转身拔剑,还是相视一笑,说一句:<br>
+    <span style="color:var(--gold); font-weight:600;">"我知道,你又犯倔了。"</span>
+  </div>
+
+  <p style="margin-top:30px; text-align:center; font-style:italic; color:var(--gold-deep);">命理如镜,照见因果,却不设牢笼。<br>报告已为你们勾勒出可能的关隘与通途。<br>真正的变量,是每一次互动中的选择。</p>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="footer-title">参 考 文 献 与 方 法 说 明</div>
+
+  <h4 style="font-weight:600; color:var(--ink); margin:20px 0 10px;">本次修订使用的工具</h4>
+  <ul>
+    <li>Python <code>lunardate</code> 库 — 公历农历换算独立验证</li>
+    <li>Python <code>sxtwl</code> 库 — 八字四柱独立排盘验证</li>
+    <li>万年历(wannianli.tianqi.com) — 多源交叉核验</li>
+    <li>万年历(100xgj.com) — 多源交叉核验</li>
+    <li>DeepSeek AI 平行报告 — 视角补充(已逐条甄别)</li>
+  </ul>
+
+  <h4 style="font-weight:600; color:var(--ink); margin:20px 0 10px;">理论框架</h4>
+  <ul>
+    <li>《三命通会》明·万民英 — 干支生克、十神体系、合婚理论</li>
+    <li>《滴天髓》宋·京图(明·刘伯温注) — 日主旺衰、格局判定、用神选取</li>
+    <li>《渊海子平》宋·徐升 — 子平术框架、六合六冲三刑、十神配置</li>
+    <li>《子平真诠》清·沈孝瞻 — 格局理论(正官合身、伤官佩印等)</li>
+    <li>子平术"通根"理论、"合大于刑"原则</li>
+    <li>十二地支六合:子丑合、寅亥合、卯戌合、辰酉合、巳申合、午未合</li>
+    <li>十二地支藏干理论</li>
+    <li>十神基本定义(比劫、食伤、财、官、印)</li>
+    <li>合婚术宫位划分(年祖、月父母、日夫妻、时子女)</li>
+  </ul>
+
+  <h4 style="font-weight:600; color:var(--ink); margin:20px 0 10px;">技术方法</h4>
+  <ul>
+    <li>干支换算经Python工具独立验证:
+      <ul style="margin-left:20px; margin-top:4px;">
+        <li>1999年10月15日 = 农历己卯年九月初七 = 庚子日</li>
+        <li>2001年11月22日 = 农历辛巳年十月初八 = 己丑日</li>
+      </ul>
+    </li>
+    <li>真太阳时校正:每经度1°差4分钟(以东经120°为基准)</li>
+    <li>地理经度:湖南宁乡约东经112.55°,江苏兴化约东经119.85°</li>
+  </ul>
+
+  <h4 style="font-weight:600; color:var(--ink); margin:20px 0 10px;">占星学参考</h4>
+  <ul>
+    <li>Liz Greene · 《Saturn: A New Look at an Old Devil》</li>
+    <li>Stephen Arroyo · 《Astrology, Psychology, and the Four Elements》</li>
+    <li>Gary Goldschneider · 《The Secret Language of Birthdays》</li>
+  </ul>
+
+  <h4 style="font-weight:600; color:var(--ink); margin:20px 0 10px;">版本沿革</h4>
+  <ul>
+    <li><strong>REV. 01</strong>(已废止):基于错误农历换算(Susita误为10月16日)、错误日柱(王喆误为己酉)</li>
+    <li><strong>REV. 02</strong>(已废止):修正公历日期与日柱错误,发现子丑六合的关键吉象</li>
+    <li><strong>REV. 03</strong>(本版):整合十神配置、大运流年、修行法门三个新维度,吸收DeepSeek平行报告中经验证的有效增量</li>
+  </ul>
+
+  <div class="disclaimer">
+    <strong>声明:</strong>命理分析属传统文化范畴。本报告基于<strong>双方完整四柱八字</strong>,核心数据已通过Python工具独立计算 + 多源万年历 + 第三方AI平行分析交叉验证。结论为<strong>概率性参考</strong>,不构成对关系走向的预测或决策依据。命理只是理解关系的工具之一,不应替代真实互动中的观察与判断。本报告仅供王喆个人参考使用。<br><br>
+    <strong>本版(REV. 03)</strong>为当前最终版。REV. 01与REV. 02请废止并以本版为准。
+  </div>
+
+  <div class="report-end">END OF REPORT · REV. 03</div>
+</footer>
+
+</div>
+</body>
+</html>
